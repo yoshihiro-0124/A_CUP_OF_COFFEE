@@ -1,24 +1,43 @@
-# README
+#　A_CUP_OF_COFFEE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+・コーヒーレビューサイト
+・挽く道具も紹介できる
+・コーヒーを家やキャンプで挽いて飲む人向け
 
-Things you may want to cover:
+### サイトテーマ
+・趣味の共有
+・共通の趣味を持った人との交流
+・コーヒー文化の流行
+・おうち時間の充実
 
-* Ruby version
+### テーマを選んだ理由
+・コーヒーを自分で挽いて飲む場合、初期費用や知識など最初はとっつきにくいことが多い
+・「どんな人が」「いつ」「どのような挽き方で」「どんな道具を使って」「どう感じたか」を気軽にシェアできる場を提供することによって、いわゆる「コーヒーヲタク」の層を広げ、厚くしていきたい
+・知り合いが小さな珈琲屋を経営しているのですが、そのような店にも興味を持ってもらえるようなアプリを作りたい
+・キャンプ文化も少し取り入れたい
 
-* System dependencies
+### ターゲットユーザ
+・現在コーヒーを豆から自分で挽いている人
+・コーヒーを挽くことに興味を持っている人
+・メインは「コーヒーを挽いて飲むかっこいい渋いおじさまに憧れている都会思考の若者(20代後半)」なのでシックモダンなデザインにしたい
 
-* Configuration
+### 主な利用シーン
+・自分でコーヒーを挽いた時や仕事の息抜きの空き時間(時間問わず)
 
-* Database creation
+## 設計書
+制作中です。
 
-* Database initialization
+## チャレンジ要素一覧
+https://docs.google.com/spreadsheets/d/198J4_OIR8SechUjDdKLwlSCbCk7l_MiWW2oQngd0p2I/edit?usp=sharing
 
-* How to run the test suite
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用素材
+- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
+- 使用しない場合は、使用素材の項目をREADMEから削除してください。
