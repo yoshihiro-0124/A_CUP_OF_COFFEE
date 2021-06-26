@@ -1,0 +1,8 @@
+<%= form_with model: @post, local: true  do |form| %>
+  <%= form.text_area :beans %><br>
+  <%= form.text_area :body %><br>
+  <%= form.collection_select(:grind_id, Grind.all, :id, :name, prompt: "-- 挽き方を選択 --") %><br>
+  <%= form.time_select :making_at, {}, class: 'form-control' %>
+  <%= form.file_field :image %><br>
+  <%= form.submit %>
+<% end %>
