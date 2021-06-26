@@ -1,0 +1,2 @@
+class Makingtime < ApplicationRecord
+end
