@@ -1,2 +1,0 @@
-class Makingtime < ApplicationRecord
-end
