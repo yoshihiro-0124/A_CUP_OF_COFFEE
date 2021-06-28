@@ -1,8 +1,70 @@
-<%= form_with model: @post, local: true  do |form| %>
-  <%= form.text_area :beans %><br>
-  <%= form.text_area :body %><br>
-  <%= form.collection_select(:grind_id, Grind.all, :id, :name, prompt: "-- 挽き方を選択 --") %><br>
-  <%= form.time_select :making_at, {}, class: 'form-control' %>
-  <%= form.file_field :image %><br>
-  <%= form.submit %>
+<h1 class="mx-3"><%= image_tag "NEWPOST.png" ,size:"350x50"%></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <%= form_with model: @post, local: true  do |form| %>
+        <a><%= image_tag "BEANSNAME.png" ,size:"350x50"%></a><br>
+        <%= form.text_field :beans %><br>
+        <%= form.collection_select(:grind_id, Grind.all, :id, :name, prompt: "-- 挽き方を選択 --") %><br>
+        <a><%= image_tag "TIMEZONE.png" ,size:"350x50"%></a><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-3">
+        <form class="form-inline">
+        <%= form.time_select :making_at %><br>
+        </form>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-6">
+        <a><%= image_tag "CHART.png" ,size:"350x50"%></a><br>
+        <select class="form-control" id="rate" name="rate">
+          <option selected>総合評価</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br>
+          <select class="form-control" id="scent" name="scent">
+          <option selected>香り</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br>
+          <select class="form-control" id="bitterness" name="bitterness">
+          <option selected>苦味</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br>
+          <select class="form-control" id="sweetness" name="sweetness">
+          <option selected>甘み</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br>
+          <select class="form-control" id="sour" name="sour">
+          <option selected>酸味</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br>
+        <a><%= image_tag "TEXT.png" ,size:"350x50"%></a><br>
+        <%= form.text_area :body %><br>
+        <%= form.file_field :image %><br>
+        <br>
+        <%= form.submit nil, class: 'btn btn-primary'%>
+      </div>
+    </div>
+</div>
 <% end %>

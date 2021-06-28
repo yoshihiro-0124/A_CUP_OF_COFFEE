@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   end
   
   def create
-    @post = Post.create params.require(:post).permit(:beans, :body, :user_id, :grind_id, :making_at, :images [])
+    @post = Post.create params.require(:post).permit(:beans, :body, :user_id, :grind_id, :making_at, :images [], :rate, :scent, :bitterness, :sweetness, :sour)
     redirect_to root_path
   end
   
@@ -24,7 +24,7 @@ class PostsController < ApplicationController
   
   private
   def post_params
-    params.require(:post).permit(:beans, :body, :user_id, :grind_id, :making_at)
+    params.require(:post).permit(:beans, :body, :user_id, :grind_id, :making_at, :rate, :scent, :bitterness, :sweetness, :sour)
   end
   
 end
